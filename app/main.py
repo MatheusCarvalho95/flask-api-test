@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-   df = pandas.read_excel('./ipca.xlsx','Sheet1').tail(12)
+   df = pandas.read_excel('./app/ipca.xlsx','Sheet1').tail(12)
    total = 0
    values_column = df['valor']
    
